@@ -365,14 +365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8796deb0e8ccf07ba02870089b0417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 74779404}
-  myCollider: {fileID: 74779405}
-  flapStrength: 20
-  gameOverMenu: {fileID: 135641499}
-  isAlive: 1
-  dieGravity: 20
-  flapSound: {fileID: 1810390809}
-  dieSound: {fileID: 868355224}
+  FlapStrength: 20
+  DieGravity: 20
+  GameoverMenu: {fileID: 135641499}
+  FlapSound: {fileID: 1810390809}
+  DieSound: {fileID: 868355224}
 --- !u!1 &75991148
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,10 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5401139c50f57bd1977635a9f059662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bird: {fileID: 74779406}
+  Bird: {fileID: 74779406}
   ScoreText: {fileID: 1651773556}
   HighestScoreText: {fileID: 1226999503}
-  PlayerScore: 0
 --- !u!4 &75991150
 Transform:
   m_ObjectHideFlags: 0
@@ -731,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa0a49306c976acb827688e97c8d95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bird: {fileID: 74779406}
+  Bird: {fileID: 74779406}
 --- !u!61 &470821635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1263,9 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7784ebc906ff218b9b2b4281f70bf43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipe: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
-  spawnRate: 0.5
-  heightOffset: 10
+  Pipe: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
+  SpawnRate: 0.5
+  Height: 10
 --- !u!4 &834179834
 Transform:
   m_ObjectHideFlags: 0
@@ -1440,7 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa0a49306c976acb827688e97c8d95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bird: {fileID: 74779406}
+  Bird: {fileID: 74779406}
 --- !u!61 &1092177504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2196,7 +2192,7 @@ GameObject:
   - component: {fileID: 1845506300}
   - component: {fileID: 1845506299}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

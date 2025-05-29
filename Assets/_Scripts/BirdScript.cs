@@ -2,27 +2,32 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
-    public Rigidbody2D myRigidbody;
-    public CircleCollider2D myCollider;
-    public float flapStrength = 10.0f;
-    public GameObject gameOverMenu;
-    public bool isAlive = true;
-    public float dieGravity = 10;
-    public AudioSource flapSound;
-    public AudioSource dieSound;
+    [SerializeField] float FlapStrength = 10.0f;
+    [SerializeField] float DieGravity = 10;
+
+    [SerializeField] GameObject GameoverMenu;
+    [SerializeField] AudioSource FlapSound;
+    [SerializeField] AudioSource DieSound;
+
+    Rigidbody2D m_Rigidbody;
+    CircleCollider2D m_Collider;
+
+    bool m_IsAlive = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_Collider = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isAlive && Input.GetKeyDown(KeyCode.Space))
+        if (m_IsAlive && Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody.linearVelocity = flapStrength * Vector2.up;
-            flapSound.Play();
+            m_Rigidbody.linearVelocity = FlapStrength * Vector2.up;
+            FlapSound.Play();
         }
     }
 
@@ -33,10 +38,16 @@ public class BirdScript : MonoBehaviour
 
     public void Die()
     {
-        gameOverMenu.SetActive(true);
-        isAlive = false;
-        myRigidbody.gravityScale = dieGravity;
-        myCollider.enabled = false;
-        dieSound.Play();
+        GameoverMenu.SetActive(true);
+        m_IsAlive = false;
+        m_Rigidbody.gravityScale = DieGravity;
+        m_Collider.enabled = false;
+        DieSound.Play();
+    }
+
+    // TODO: This is an anti-pattern, please remove when possible
+    public bool IsAlive()
+    {
+        return m_IsAlive;
     }
 }
