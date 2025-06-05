@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624496615295741813}
-  - component: {fileID: 425843992482808826}
+  - component: {fileID: 999952321617041267}
   m_Layer: 0
   m_Name: Pipe
   m_TagString: Untagged
@@ -260,7 +260,7 @@ Transform:
   - {fileID: 2362135901929007761}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &425843992482808826
+--- !u!114 &999952321617041267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
