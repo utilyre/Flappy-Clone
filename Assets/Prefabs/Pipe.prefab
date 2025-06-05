@@ -91,7 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f5d354adfe50307a74f4aae67fad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logic: {fileID: 0}
 --- !u!1 &1230525587925503120
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +103,7 @@ GameObject:
   - component: {fileID: 6376399614014534329}
   - component: {fileID: 9054691038654774281}
   m_Layer: 0
-  m_Name: TopPipe
+  m_Name: Top Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,8 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46791311e5a51fb2195c7db26a5643e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  deadzone: -30
+  _speed: 10
+  _leftDeadzone: -30
 --- !u!1 &2957363895447815849
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +286,7 @@ GameObject:
   - component: {fileID: 7144304440986367754}
   - component: {fileID: 4361141087830655072}
   m_Layer: 0
-  m_Name: BottomPipe
+  m_Name: Bottom Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
