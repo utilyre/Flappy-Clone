@@ -5,18 +5,18 @@
 - [x] Title screen scene
 - [x] Save the highest score in PlayerPrefs
 
-Basics of...
-- Unity's UI
-- C# Programming
-- Game UI
+- [ ] Remove empty Update and Start functions
+- [ ] Add visibility modifiers and make use of SerializeField
+- [ ] Follow C# naming conventions
+- [ ] Remove the "Script" suffix from classes
+- [ ] PipeSpawn -> PipeSpawner
+- [ ] What the hell even is MiddleScript
+- [ ] Move things out of the SampleScene
+- [ ] Move stuff out of lifecycle methods
+- [ ] Enable access to managers programmatically via singleton
+- [ ] Use a single manager for pipes
+- [ ] Put a kinematic Rigidbody2D on objects with a collider (pipes)
 
-Also...
-- Bug fixing
-- SFX
-- Cloud particles
-- Wing animation
-- Title screen
-- Save highest score
-
-accurate picture of what im doing well and where i can improve
-I want direction
+- [ ] Add a readme on how to run and find the demo
+- [ ] Remove tutorial link from commit history
+- [ ] BirdScript -> BirdController
