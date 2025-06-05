@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PipeSpawnScript : MonoBehaviour
+public class PipeSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _pipe;
     [SerializeField] private float _spawnRate = 1 / 2;

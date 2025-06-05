@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PipeMoveScript : MonoBehaviour
+public class PipeMover : MonoBehaviour
 {
     [SerializeField] private float _speed = 10;
     [SerializeField] private float _leftDeadzone = -30;

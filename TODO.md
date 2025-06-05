@@ -8,8 +8,8 @@
 - [x] Remove empty Update and Start functions
 - [x] Add visibility modifiers and make use of SerializeField
 - [x] Follow C# naming conventions
-- [ ] Remove the "Script" suffix from classes
-- [ ] PipeSpawn -> PipeSpawner
+- [x] Remove the "Script" suffix from classes
+- [x] PipeSpawn -> PipeSpawner
 - [ ] What the hell even is MiddleScript
 - [ ] Move things out of the SampleScene
 - [ ] Move stuff out of lifecycle methods

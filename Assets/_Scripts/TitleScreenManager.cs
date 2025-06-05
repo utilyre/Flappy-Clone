@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameStarterScript : MonoBehaviour
+public class TitleScreenManager : MonoBehaviour
 {
     public void StartGame()
     {

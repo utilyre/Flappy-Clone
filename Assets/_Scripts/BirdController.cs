@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BirdScript : MonoBehaviour
+public class BirdController : MonoBehaviour
 {
     [SerializeField] private float _flapStrength = 20;
     [SerializeField] private float _dieGravity = 20;

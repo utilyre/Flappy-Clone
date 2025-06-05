@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LogicManagerScript : MonoBehaviour
+public class LogicManager : MonoBehaviour
 {
-    [SerializeField] private BirdScript _bird;
+    [SerializeField] private BirdController _birdController;
     [SerializeField] private Text _scoreText;
     [SerializeField] private Text _highestScoreText;
 
@@ -18,7 +18,7 @@ public class LogicManagerScript : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        if (!_bird.IsAlive())
+        if (!_birdController.IsAlive())
         {
             return;
         }
