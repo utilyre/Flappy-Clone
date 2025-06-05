@@ -5,7 +5,7 @@
 - [x] Title screen scene
 - [x] Save the highest score in PlayerPrefs
 
-- [ ] Remove empty Update and Start functions
+- [x] Remove empty Update and Start functions
 - [ ] Add visibility modifiers and make use of SerializeField
 - [ ] Follow C# naming conventions
 - [ ] Remove the "Script" suffix from classes
