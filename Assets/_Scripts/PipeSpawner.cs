@@ -8,13 +8,11 @@ public class PipeSpawner : MonoBehaviour
 
     private float m_Timer = 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        Instantiate(_pipe, transform);
+        SpawnPipeAtRandomHeight();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         if (m_Timer < 1 / _spawnRate)
@@ -23,10 +21,15 @@ public class PipeSpawner : MonoBehaviour
         }
         else
         {
-            float lowestPoint = transform.position.y - _height;
-            float highestPoint = transform.position.y + _height;
-            Instantiate(_pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)), transform.rotation);
+            SpawnPipeAtRandomHeight();
             m_Timer = 0;
         }
+    }
+
+    private void SpawnPipeAtRandomHeight()
+    {
+        float lowestPoint = transform.position.y - _height;
+        float highestPoint = transform.position.y + _height;
+        Instantiate(_pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)), transform.rotation);
     }
 }
