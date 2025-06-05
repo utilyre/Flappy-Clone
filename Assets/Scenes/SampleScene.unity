@@ -207,10 +207,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74779403}
+  - component: {fileID: 74779406}
   - component: {fileID: 74779402}
   - component: {fileID: 74779404}
   - component: {fileID: 74779405}
-  - component: {fileID: 74779406}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Player
@@ -365,11 +365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8796deb0e8ccf07ba02870089b0417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlapStrength: 20
-  DieGravity: 20
-  GameoverMenu: {fileID: 135641499}
-  FlapSound: {fileID: 1810390809}
-  DieSound: {fileID: 868355224}
+  _flapStrength: 20
+  _dieGravity: 20
+  _gameoverMenu: {fileID: 135641499}
+  _flapSound: {fileID: 1810390809}
+  _dieSound: {fileID: 868355224}
 --- !u!1 &75991148
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 75991150}
   - component: {fileID: 75991149}
   m_Layer: 0
-  m_Name: LogicManager
+  m_Name: Logic Manager
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,9 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5401139c50f57bd1977635a9f059662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 74779406}
-  ScoreText: {fileID: 1651773556}
-  HighestScoreText: {fileID: 1226999503}
+  _bird: {fileID: 74779406}
+  _scoreText: {fileID: 1651773556}
+  _highestScoreText: {fileID: 1226999503}
 --- !u!4 &75991150
 Transform:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 470821635}
   - component: {fileID: 470821634}
   m_Layer: 0
-  m_Name: DeadzoneBottom
+  m_Name: Deadzone Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa0a49306c976acb827688e97c8d95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 74779406}
+  _bird: {fileID: 74779406}
 --- !u!61 &470821635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 834179834}
   - component: {fileID: 834179833}
   m_Layer: 0
-  m_Name: PipeSpawner
+  m_Name: Pipe Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1259,9 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7784ebc906ff218b9b2b4281f70bf43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pipe: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
-  SpawnRate: 0.5
-  Height: 10
+  _pipe: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
+  _spawnRate: 0.5
+  _height: 10
 --- !u!4 &834179834
 Transform:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,7 @@ GameObject:
   - component: {fileID: 868355225}
   - component: {fileID: 868355224}
   m_Layer: 0
-  m_Name: DieSound
+  m_Name: Die Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 1092177504}
   - component: {fileID: 1092177503}
   m_Layer: 0
-  m_Name: DeadzoneTop
+  m_Name: Deadzone Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa0a49306c976acb827688e97c8d95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 74779406}
+  _bird: {fileID: 74779406}
 --- !u!61 &1092177504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2062,7 +2062,7 @@ GameObject:
   - component: {fileID: 1810390810}
   - component: {fileID: 1810390809}
   m_Layer: 0
-  m_Name: FlapSound
+  m_Name: Flap Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

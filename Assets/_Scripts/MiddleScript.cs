@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class MiddleScript : MonoBehaviour
 {
-    LogicManagerScript m_Logic;
-    AudioSource m_PointSound;
+    private LogicManagerScript _logic;
+    private AudioSource _pointSound;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        m_Logic = GameObject.FindGameObjectWithTag("GameController").GetComponent<LogicManagerScript>();
-        m_PointSound = GameObject.FindGameObjectWithTag("PointSound").GetComponent<AudioSource>();
+        _logic = GameObject.FindGameObjectWithTag("GameController").GetComponent<LogicManagerScript>();
+        _pointSound = GameObject.FindGameObjectWithTag("PointSound").GetComponent<AudioSource>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        m_Logic.AddScore(1);
-        m_PointSound.Play();
+        _logic.AddScore(1);
+        _pointSound.Play();
     }
 }

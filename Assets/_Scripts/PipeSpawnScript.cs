@@ -2,30 +2,30 @@ using UnityEngine;
 
 public class PipeSpawnScript : MonoBehaviour
 {
-    [SerializeField] GameObject Pipe;
-    [SerializeField] float SpawnRate = 1 / 2;
-    [SerializeField] float Height = 10;
+    [SerializeField] private GameObject _pipe;
+    [SerializeField] private float _spawnRate = 1 / 2;
+    [SerializeField] private float _height = 10;
 
-    float m_Timer = 0;
+    private float m_Timer = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        Instantiate(Pipe, transform);
+        Instantiate(_pipe, transform);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (m_Timer < 1 / SpawnRate)
+        if (m_Timer < 1 / _spawnRate)
         {
             m_Timer += Time.deltaTime;
         }
         else
         {
-            float lowestPoint = transform.position.y - Height;
-            float highestPoint = transform.position.y + Height;
-            Instantiate(Pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)), transform.rotation);
+            float lowestPoint = transform.position.y - _height;
+            float highestPoint = transform.position.y + _height;
+            Instantiate(_pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint)), transform.rotation);
             m_Timer = 0;
         }
     }

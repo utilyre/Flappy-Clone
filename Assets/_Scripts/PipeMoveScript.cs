@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class PipeMoveScript : MonoBehaviour
 {
-    [SerializeField] float Speed = 10;
-    [SerializeField] float LeftDeadzone = -30;
+    [SerializeField] private float _speed = 10;
+    [SerializeField] private float _leftDeadzone = -30;
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        transform.position += Speed * Time.deltaTime * Vector3.left;
-        if (transform.position.x <= LeftDeadzone)
+        transform.position += _speed * Time.deltaTime * Vector3.left;
+        if (transform.position.x <= _leftDeadzone)
         {
             Debug.Log("Pipe deleted");
             Destroy(gameObject);

@@ -4,37 +4,36 @@ using UnityEngine.SceneManagement;
 
 public class LogicManagerScript : MonoBehaviour
 {
-    [SerializeField] BirdScript Bird;
-    [SerializeField] Text ScoreText;
-    [SerializeField] Text HighestScoreText;
+    [SerializeField] private BirdScript _bird;
+    [SerializeField] private Text _scoreText;
+    [SerializeField] private Text _highestScoreText;
 
-    int m_PlayerScore;
+    private int _playerScore;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        HighestScoreText.text = $"Highest: {PlayerPrefs.GetInt("highest_score", 0)}";
+        _highestScoreText.text = $"Highest: {PlayerPrefs.GetInt("highest_score", 0)}";
     }
 
-    [ContextMenu("Add score")]
     public void AddScore(int amount)
     {
-        if (!Bird.IsAlive())
+        if (!_bird.IsAlive())
         {
             return;
         }
 
-        m_PlayerScore += amount;
+        _playerScore += amount;
         int highestScore = PlayerPrefs.GetInt("highest_score", 0);
-        if (m_PlayerScore > highestScore)
+        if (_playerScore > highestScore)
         {
-            highestScore = m_PlayerScore;
+            highestScore = _playerScore;
             PlayerPrefs.SetInt("highest_score", highestScore);
             PlayerPrefs.Save();
         }
 
-        HighestScoreText.text = $"Highest: {highestScore}";
-        ScoreText.text = m_PlayerScore.ToString();
+        _highestScoreText.text = $"Highest: {highestScore}";
+        _scoreText.text = _playerScore.ToString();
     }
 
     public void RestartGame()

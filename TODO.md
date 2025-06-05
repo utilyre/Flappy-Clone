@@ -6,8 +6,8 @@
 - [x] Save the highest score in PlayerPrefs
 
 - [x] Remove empty Update and Start functions
-- [ ] Add visibility modifiers and make use of SerializeField
-- [ ] Follow C# naming conventions
+- [x] Add visibility modifiers and make use of SerializeField
+- [x] Follow C# naming conventions
 - [ ] Remove the "Script" suffix from classes
 - [ ] PipeSpawn -> PipeSpawner
 - [ ] What the hell even is MiddleScript
@@ -18,5 +18,4 @@
 - [ ] Put a kinematic Rigidbody2D on objects with a collider (pipes)
 
 - [ ] Add a readme on how to run and find the demo
-- [ ] Remove tutorial link from commit history
 - [ ] BirdScript -> BirdController

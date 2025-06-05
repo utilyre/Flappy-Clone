@@ -2,52 +2,50 @@ using UnityEngine;
 
 public class BirdScript : MonoBehaviour
 {
-    [SerializeField] float FlapStrength = 10.0f;
-    [SerializeField] float DieGravity = 10;
+    [SerializeField] private float _flapStrength = 20;
+    [SerializeField] private float _dieGravity = 20;
 
-    [SerializeField] GameObject GameoverMenu;
-    [SerializeField] AudioSource FlapSound;
-    [SerializeField] AudioSource DieSound;
+    [SerializeField] private GameObject _gameoverMenu;
+    [SerializeField] private AudioSource _flapSound;
+    [SerializeField] private AudioSource _dieSound;
 
-    Rigidbody2D m_Rigidbody;
-    CircleCollider2D m_Collider;
+    private Rigidbody2D _rigidbody;
+    private CircleCollider2D _collider;
 
-    bool m_IsAlive = true;
+    private bool _isAlive = true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
-        m_Collider = GetComponent<CircleCollider2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _collider = GetComponent<CircleCollider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (m_IsAlive && Input.GetKeyDown(KeyCode.Space))
+        if (_isAlive && Input.GetKeyDown(KeyCode.Space))
         {
-            m_Rigidbody.linearVelocity = FlapStrength * Vector2.up;
-            FlapSound.Play();
+            _rigidbody.linearVelocity = _flapStrength * Vector2.up;
+            _flapSound.Play();
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Die();
     }
 
     public void Die()
     {
-        GameoverMenu.SetActive(true);
-        m_IsAlive = false;
-        m_Rigidbody.gravityScale = DieGravity;
-        m_Collider.enabled = false;
-        DieSound.Play();
+        _gameoverMenu.SetActive(true);
+        _isAlive = false;
+        _rigidbody.gravityScale = _dieGravity;
+        _collider.enabled = false;
+        _dieSound.Play();
     }
 
     // TODO: This is an anti-pattern, please remove when possible
     public bool IsAlive()
     {
-        return m_IsAlive;
+        return _isAlive;
     }
 }

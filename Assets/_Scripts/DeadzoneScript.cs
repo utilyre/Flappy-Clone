@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DeadzoneScript : MonoBehaviour
 {
-    [SerializeField] BirdScript Bird;
+    [SerializeField] private BirdScript _bird;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Bird.Die();
+        _bird.Die();
     }
 }
