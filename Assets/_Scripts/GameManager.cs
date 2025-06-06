@@ -33,7 +33,13 @@ public class GameManager : MonoBehaviour
 
     private void OnDoubleScoreCollected()
     {
-        _doubleScore = true;
+        SetDoubleScore(true);
+    }
+
+    private void SetDoubleScore(bool value)
+    {
+        _doubleScore = value;
+        _doubleScoreTimer = 0;
         AddScore(0); // update score text
     }
 
@@ -49,9 +55,7 @@ public class GameManager : MonoBehaviour
             _doubleScoreTimer += Time.deltaTime;
             if (_doubleScoreTimer > _doubleScoreTimeout)
             {
-                _doubleScoreTimer = 0;
-                _doubleScore = false;
-                AddScore(0); // update score text
+                SetDoubleScore(false);
             }
         }
     }
