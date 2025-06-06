@@ -3,10 +3,11 @@ using UnityEngine;
 public class PipeSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _pipe;
-    [SerializeField] private float _spawnRate = 1 / 2;
+    [Tooltip("The duration between each spawn in seconds.")]
+    [SerializeField] private float _spawnInterval = 2;
     [SerializeField] private float _height = 10;
 
-    private float m_Timer = 0;
+    private float _timer = 0;
 
     private void Start()
     {
@@ -15,14 +16,12 @@ public class PipeSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (m_Timer < 1 / _spawnRate)
+        // possible to use async/await but it might not be all that necessary
+        _timer += Time.deltaTime;
+        if (_timer >= _spawnInterval)
         {
-            m_Timer += Time.deltaTime;
-        }
-        else
-        {
+            _timer = 0;
             SpawnPipeAtRandomHeight();
-            m_Timer = 0;
         }
     }
 
