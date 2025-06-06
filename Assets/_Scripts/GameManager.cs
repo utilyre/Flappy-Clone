@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LogicManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private BirdController _birdController;
     [SerializeField] private Text _scoreText;
