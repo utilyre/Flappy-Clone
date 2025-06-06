@@ -241,6 +241,7 @@ MonoBehaviour:
   _birdController: {fileID: 74779406}
   _scoreText: {fileID: 1651773556}
   _highestScoreText: {fileID: 1226999503}
+  _doubleScoreTimeout: 10
 --- !u!4 &75991150
 Transform:
   m_ObjectHideFlags: 0
@@ -882,6 +883,7 @@ MonoBehaviour:
   _doubleScore: {fileID: 2051874065219445026, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
   _spawnInterval: 2
   _height: 10
+  _doubleScoreProbability: 0.01
 --- !u!4 &834179834
 Transform:
   m_ObjectHideFlags: 0
