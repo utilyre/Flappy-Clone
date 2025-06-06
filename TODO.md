@@ -11,7 +11,7 @@
 - [x] Remove the "Script" suffix from classes
 - [x] PipeSpawn -> PipeSpawner
 - [ ] What the hell even is MiddleScript
-- [ ] Move things out of the SampleScene
+- [x] Move things out of the SampleScene
 - [ ] Move stuff out of lifecycle methods
 - [ ] Enable access to managers programmatically via singleton
 - [ ] Use a single manager for pipes

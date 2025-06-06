@@ -6923,6 +6923,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 2069240705976809370, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3075399864675405490, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6962,6 +6966,10 @@ PrefabInstance:
     - target: {fileID: 3075399864675405490, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892362921288736389, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7123526396030654954, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
       propertyPath: _dieSound
