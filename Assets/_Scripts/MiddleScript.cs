@@ -7,6 +7,7 @@ public class MiddleScript : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("middle script started");
         _logicManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<LogicManager>();
         _pointSound = GameObject.FindGameObjectWithTag("PointSound").GetComponent<AudioSource>();
     }

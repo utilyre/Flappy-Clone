@@ -31,6 +31,7 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Player/Pipe collision");
         Die();
     }
 

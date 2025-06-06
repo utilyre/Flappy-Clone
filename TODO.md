@@ -15,7 +15,7 @@
 - [ ] Move stuff out of lifecycle methods
 - [ ] Enable access to managers programmatically via singleton
 - [ ] Use a single manager for pipes
-- [ ] Put a kinematic Rigidbody2D on objects with a collider (pipes)
+- [x] Put a kinematic Rigidbody2D on objects with a collider (pipes)
 
 - [ ] Add a readme on how to run and find the demo
-- [ ] BirdScript -> BirdController
+- [x] BirdScript -> BirdController
