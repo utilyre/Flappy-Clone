@@ -17,7 +17,6 @@ public class PipeController : MonoBehaviour
         _rigidbody.linearVelocity = _speed * Vector2.left;
         if (_rigidbody.position.x <= _leftDeadzone)
         {
-            Debug.Log("Pipe deleted");
             Destroy(gameObject);
         }
     }
