@@ -11,12 +11,12 @@ public class ScoreSound : MonoBehaviour
 
     private void OnEnable()
     {
-        MiddleScript.ScoreCollected += OnScoreCollected;
+        ScoreTrigger.Triggered += OnScoreCollected;
     }
 
     private void OnDisable()
     {
-        MiddleScript.ScoreCollected -= OnScoreCollected;
+        ScoreTrigger.Triggered -= OnScoreCollected;
     }
 
     private void OnScoreCollected()
