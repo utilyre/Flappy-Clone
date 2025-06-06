@@ -19,3 +19,8 @@
 
 - [x] Add a readme on how to run and find the demo
 - [x] BirdScript -> BirdController
+
+- [ ] Make camera look ahead of bird
+- [x] Double score power-up
+- [ ] Auto-shooting power-up
+- [ ] Nuke power-up (clears all visible pipes)
