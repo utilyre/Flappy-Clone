@@ -1,20 +1,12 @@
+using System;
 using UnityEngine;
 
 public class MiddleScript : MonoBehaviour
 {
-    private LogicManager _logicManager;
-    private AudioSource _pointSound;
-
-    private void Start()
-    {
-        Debug.Log("middle script started");
-        _logicManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<LogicManager>();
-        _pointSound = GameObject.FindGameObjectWithTag("PointSound").GetComponent<AudioSource>();
-    }
+    public static event Action ScoreCollected;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _logicManager.AddScore(1);
-        _pointSound.Play();
+        ScoreCollected?.Invoke();
     }
 }

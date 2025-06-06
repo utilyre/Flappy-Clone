@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 75991149}
   m_Layer: 0
   m_Name: Logic Manager
-  m_TagString: GameController
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6775,9 +6775,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2061256376}
   - component: {fileID: 2061256375}
+  - component: {fileID: 2061256377}
   m_Layer: 0
-  m_Name: Point Sound
-  m_TagString: PointSound
+  m_Name: Score Sound
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6894,6 +6895,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2061256377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061256374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b9a7af6a7fedcfc98142b3a824d392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1270177257362983845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6905,6 +6918,10 @@ PrefabInstance:
     - target: {fileID: 1239042914277936142, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
       propertyPath: m_Name
       value: Bird
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239042914277936142, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3075399864675405490, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
       propertyPath: m_LocalPosition.x

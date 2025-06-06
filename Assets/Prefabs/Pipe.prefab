@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 967022812469221152}
   - component: {fileID: 9023961067821602822}
   m_Layer: 9
-  m_Name: Middle
+  m_Name: Score Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

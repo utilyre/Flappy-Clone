@@ -10,7 +10,21 @@ public class LogicManager : MonoBehaviour
 
     private int _playerScore;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void OnEnable()
+    {
+        MiddleScript.ScoreCollected += OnScoreCollected;
+    }
+
+    private void OnDisable()
+    {
+        MiddleScript.ScoreCollected -= OnScoreCollected;
+    }
+
+    private void OnScoreCollected()
+    {
+        AddScore(1);
+    }
+
     private void Start()
     {
         _highestScoreText.text = $"Highest: {PlayerPrefs.GetInt("highest_score", 0)}";
