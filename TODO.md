@@ -22,5 +22,8 @@
 
 - [x] Make camera look ahead of bird
 - [x] Double score power-up
-- [ ] Auto-shooting power-up
+- [ ] Gun power-up
 - [ ] Nuke power-up (clears all visible pipes)
+
+- [ ] Double the "double score power-up" multiplier each time it's collected
+- [ ] Use SO for power-ups

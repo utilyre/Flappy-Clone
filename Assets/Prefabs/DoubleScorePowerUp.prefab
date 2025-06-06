@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4957846890298893479}
   - component: {fileID: 2759788093098797376}
   m_Layer: 9
-  m_Name: DoubleScore
+  m_Name: DoubleScorePowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

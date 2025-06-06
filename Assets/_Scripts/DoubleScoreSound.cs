@@ -11,12 +11,12 @@ public class DoubleScoreSound : MonoBehaviour
 
     private void OnEnable()
     {
-        DoubleScore.Collected += OnDoubleScoreCollected;
+        DoubleScorePowerUp.Collected += OnDoubleScoreCollected;
     }
 
     private void OnDisable()
     {
-        DoubleScore.Collected -= OnDoubleScoreCollected;
+        DoubleScorePowerUp.Collected -= OnDoubleScoreCollected;
     }
 
     private void OnDoubleScoreCollected()

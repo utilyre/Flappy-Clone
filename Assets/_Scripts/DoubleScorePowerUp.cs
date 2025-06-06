@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class DoubleScore : MonoBehaviour
+public class DoubleScorePowerUp : MonoBehaviour
 {
     public static event Action Collected;
 

@@ -879,11 +879,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7784ebc906ff218b9b2b4281f70bf43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pipe: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
-  _doubleScore: {fileID: 2051874065219445026, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+  _pipePrefab: {fileID: 2582100124148124020, guid: 8e90f816d8c51a2549701d4b87f76bbd, type: 3}
+  _doubleScorePowerUpPrefab: {fileID: 2051874065219445026, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+  _gunPowerUpPrefab: {fileID: 3236694046565090846, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
   _spawnInterval: 2
   _height: 10
-  _doubleScoreProbability: 0.01
+  _doubleScorePowerUpProbability: 0.005
+  _gunPowerUpProbability: 0.01
 --- !u!4 &834179834
 Transform:
   m_ObjectHideFlags: 0

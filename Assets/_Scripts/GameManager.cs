@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         ScoreTrigger.Triggered += OnScoreTriggered;
-        DoubleScore.Collected += OnDoubleScoreCollected;
+        DoubleScorePowerUp.Collected += OnDoubleScoreCollected;
     }
 
     private void OnDisable()
     {
         ScoreTrigger.Triggered -= OnScoreTriggered;
-        DoubleScore.Collected -= OnDoubleScoreCollected;
+        DoubleScorePowerUp.Collected -= OnDoubleScoreCollected;
     }
 
     private void OnScoreTriggered()

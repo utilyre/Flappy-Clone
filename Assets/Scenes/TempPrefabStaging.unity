@@ -313,7 +313,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d798760fe9daa2dfcb819d57ab69f8d2, type: 3}
---- !u!1001 &4701644568515766911
+--- !u!1001 &7577342552067908751
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -321,71 +321,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 606137203218692685, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
-      propertyPath: m_Color.b
-      value: 0.4669811
-      objectReference: {fileID: 0}
-    - target: {fileID: 606137203218692685, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8377465
-      objectReference: {fileID: 0}
-    - target: {fileID: 606137203218692685, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2051874065219445026, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
-      propertyPath: m_Name
-      value: Double Score
-      objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8104528069144201268, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+    - target: {fileID: 334801727617034658, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236694046565090846, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
+      propertyPath: m_Name
+      value: Gun Power Up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3802eb8f0e480ae0096e1690c3a373d7, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: dc428206fd0ba1d858faa58af0bc0d55, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 552415928}
-  - {fileID: 4701644568515766911}
   - {fileID: 1834203752}
+  - {fileID: 7577342552067908751}
