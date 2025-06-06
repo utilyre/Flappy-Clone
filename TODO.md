@@ -17,5 +17,5 @@
 - [ ] ~Use a single manager for pipes~
 - [x] Put a kinematic Rigidbody2D on objects with a collider (pipes)
 
-- [ ] Add a readme on how to run and find the demo
+- [x] Add a readme on how to run and find the demo
 - [x] BirdScript -> BirdController
