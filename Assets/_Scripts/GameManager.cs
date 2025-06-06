@@ -8,26 +8,50 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text _scoreText;
     [SerializeField] private Text _highestScoreText;
 
-    private int _playerScore;
+    [SerializeField] private float _doubleScoreTimeout = 10;
+
+    private int _playerScore = 0;
+    private bool _doubleScore = false;
+    private float _doubleScoreTimer = 0;
 
     private void OnEnable()
     {
-        ScoreTrigger.Triggered += OnScoreCollected;
+        ScoreTrigger.Triggered += OnScoreTriggered;
+        DoubleScore.Collected += OnDoubleScoreCollected;
     }
 
     private void OnDisable()
     {
-        ScoreTrigger.Triggered -= OnScoreCollected;
+        ScoreTrigger.Triggered -= OnScoreTriggered;
+        DoubleScore.Collected -= OnDoubleScoreCollected;
     }
 
-    private void OnScoreCollected()
+    private void OnScoreTriggered()
     {
         AddScore(1);
+    }
+
+    private void OnDoubleScoreCollected()
+    {
+        _doubleScore = true;
     }
 
     private void Start()
     {
         _highestScoreText.text = $"Highest: {PlayerPrefs.GetInt("highest_score", 0)}";
+    }
+
+    private void Update()
+    {
+        if (_doubleScore)
+        {
+            _doubleScoreTimer += Time.deltaTime;
+            if (_doubleScoreTimer > _doubleScoreTimeout)
+            {
+                _doubleScoreTimer = 0;
+                _doubleScore = false;
+            }
+        }
     }
 
     public void AddScore(int amount)
@@ -37,7 +61,15 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        _playerScore += amount;
+        if (_doubleScore)
+        {
+            _playerScore += 2 * amount;
+        }
+        else
+        {
+            _playerScore += amount;
+        }
+
         int highestScore = PlayerPrefs.GetInt("highest_score", 0);
         if (_playerScore > highestScore)
         {
