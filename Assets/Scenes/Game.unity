@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 75991150}
   - component: {fileID: 75991149}
   m_Layer: 0
-  m_Name: Logic Manager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

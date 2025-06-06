@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        if (!_birdController.IsAlive())
+        if (!_birdController.IsAlive)
         {
             return;
         }

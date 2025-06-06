@@ -12,7 +12,7 @@ public class BirdController : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private CircleCollider2D _collider;
 
-    private bool _isAlive = true;
+    public bool IsAlive { get; private set; } = true;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class BirdController : MonoBehaviour
 
     private void Update()
     {
-        if (_isAlive && Input.GetKeyDown(KeyCode.Space))
+        if (IsAlive && Input.GetKeyDown(KeyCode.Space))
         {
             _rigidbody.linearVelocity = _flapStrength * Vector2.up;
             _flapSound.Play();
@@ -38,15 +38,9 @@ public class BirdController : MonoBehaviour
     public void Die()
     {
         _gameoverMenu.SetActive(true);
-        _isAlive = false;
+        IsAlive = false;
         _rigidbody.gravityScale = _dieGravity;
         _collider.enabled = false;
         _dieSound.Play();
-    }
-
-    // TODO: This is an anti-pattern, please remove when possible
-    public bool IsAlive()
-    {
-        return _isAlive;
     }
 }
