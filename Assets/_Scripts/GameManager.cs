@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     private void OnDoubleScoreCollected()
     {
         _doubleScore = true;
+        AddScore(0); // update score text
     }
 
     private void Start()
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
             {
                 _doubleScoreTimer = 0;
                 _doubleScore = false;
+                AddScore(0); // update score text
             }
         }
     }
@@ -79,7 +81,14 @@ public class GameManager : MonoBehaviour
         }
 
         _highestScoreText.text = $"Highest: {highestScore}";
-        _scoreText.text = _playerScore.ToString();
+        if (_doubleScore)
+        {
+            _scoreText.text = $"2x{_playerScore}";
+        }
+        else
+        {
+            _scoreText.text = _playerScore.ToString();
+        }
     }
 
     public void RestartGame()
